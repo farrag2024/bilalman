@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>مصفاة بلال</title>
+  <style>
+    body {
+      background-color: #add8e6; /* اللون الأزرق الفاتح */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: auto;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      width: 95%;
+    }
+    h1 {
+      font-size: 3em;
+      margin-bottom: 40px;
+      font-family: 'Courier New', Courier, monospace; /* تغيير نوع الخط */
+    }
+    .button {
+      padding: 15px 30px;
+      margin: 10px;
+      font-size: 1.2em;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* إضافة ظل */
+      transition: background-color 0.3s, box-shadow 0.3s; /* إضافة انتقال لتغيير اللون والظل */
+    }
+    .button.green {
+      background-color: #4CAF50;
+      color: white;
+    }
+    .button.green:hover {
+      background-color: hsl(123, 48%, 76%);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* تغيير الظل عند التحويم */
+    }
+    .button.blue {
+      background-color: #008CBA;
+      color: white;
+    }
+    .button.blue:hover {
+      background-color: hsl(199, 69%, 85%);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* تغيير الظل عند التحويم */
+    }
+    .button.red {
+      background-color: #f44336;
+      color: white;
+    }
+    .button.red:hover {
+      background-color: #e57373;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* تغيير الظل عند التحويم */
+    }
+  </style>
+</head>
+<body>
+  <img src="https://storage.googleapis.com/glide-prod.appspot.com/uploads-v2/72E1oahjHmHesg6v46ID/pub/klHkGYr2jmhw7ZqIw157.png" alt="Logo" width="100%">
+  <h1>مصفاة بلال</h1>
+  <button class="button green" onclick="window.location.href='https://farrag2024.github.io/bilalin/'">حجز موعد</button>
+  <button class="button blue" onclick="requestPassword()">عرض الحجوزات</button>
+  <button class="button red" onclick="window.close()">خروج</button>
+
+  <script>
+    function requestPassword() {
+      const password = prompt("أدخل كلمة المرور:");
+      if (password === "12345") {
+        window.location.href = 'https://farrag2024.github.io/bilalout/';
+      } else {
+        alert("كلمة المرور غير صحيحة");
+      }
+    }
+  </script>
+</body>
+</html>
